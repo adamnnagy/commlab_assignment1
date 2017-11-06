@@ -1,0 +1,161 @@
+html, body {
+   background-image: url("pics/blackboard.jpg");
+   z-index: 0;
+   font-family: 'Amatic SC', cursive;
+   background-repeat: no-repeat;
+   background-color: black;
+   background-size: 100%;
+   color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  line-height: 1.1;
+  color: #606060
+}
+
+h3 {
+   font-size: 40px;
+}
+h4 {
+   font-size: 35px;
+}
+.content {
+   font-size: 14px;
+   font-family: 'Varela Round', sans-serif;
+   /*background-color: #424242;*/
+   margin: 1em;
+   padding: 1em;
+}
+#asdf {
+   text-align: center;
+   color: white;
+}
+#on-img {
+   position: relative;
+   text-align: center;
+   top: 270px;
+   left: 33%;
+   z-index: 0;
+}
+.images{
+   z-index: 10;
+   display: inline;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.title{
+   margin-right: auto;
+   margin-left: auto;
+   position: relative;
+}
+
+.navbar-inverse{
+   font-family: 'Amatic SC', cursive;
+   background-image: url('pics/wood.jpg');
+   font-color: #000000;
+   font-size: 32px;
+   margin-right: 1em;
+   margin-left: 1em;
+}
+
+.navbar-brand {
+   font-size: 40px;
+}
+
+.active {
+   background-color: inherit;
+}
+
+
+#blogspace {
+   background-color: #ffffff;
+   height: 700px;
+}
+
+
+.row {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*slideshow animations*/
+
+.css-slideshow{
+   display: block;
+   position: relative;
+   margin: .5em auto .5em auto;
+   height: 5px;
+   top: -80px;
+   
+}
+.css-slideshow figure{
+   margin: 0;
+   position: absolute;
+}
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+.css-slideshow figure{
+   opacity:0;
+}
+
+
+
+figure:nth-child(1) {
+   animation: xfade 24s 18s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 24s 12s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 24s 6s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 24s 0s infinite;
+}
+
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  26%{
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
